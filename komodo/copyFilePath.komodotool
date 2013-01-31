@@ -1,0 +1,16 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "copyFilePath", 
+  "language": "Python", 
+  "trigger_enabled": 0, 
+  "rank": 100, 
+  "trigger": "trigger_postopen", 
+  "value": [
+    "view = komodo.view.manager.currentView", 
+    "s = view.document.file.displayPath", 
+    ""
+  ], 
+  "version": "1.0.7", 
+  "async": 0, 
+  "type": "macro"
+}

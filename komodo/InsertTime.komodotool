@@ -1,0 +1,27 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "InsertTime", 
+  "language": "Python", 
+  "trigger_enabled": "0", 
+  "rank": "100", 
+  "trigger": "trigger_postopen", 
+  "value": [
+    "import komodo as ko", 
+    "from datetime import datetime", 
+    "", 
+    "if ko.view:", 
+    "    ko.view.setFocus()", 
+    "ke = ko.editor", 
+    "try:", 
+    "    ke.beginUndoAction()", 
+    "    ke.insertText(ke.currentPos, datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\\n\"))", 
+    "    ke.lineDown()", 
+    "finally:", 
+    "    ke.endUndoAction()", 
+    "", 
+    ""
+  ], 
+  "version": "1.0.7", 
+  "async": "0", 
+  "type": "macro"
+}
